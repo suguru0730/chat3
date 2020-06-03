@@ -245,7 +245,7 @@ $(function() {
 
       if(window.navigator.userAgent.search(regexp) !== -1){
 
-      console.log('モバイル端末です');
+      //console.log('モバイル端末です');
 
       }else{
 
