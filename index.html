@@ -150,14 +150,19 @@
 
    var cont = document.getElementById("test");
    var audioElem　= new Audio();　//音楽
+   var i = 0;
 
-  //cont.addEventListener( 'touchstart', function() {
-    cont.addEventListener( 'click', function() {
+    cont.addEventListener( 'touchstart', function() {
+  //cont.addEventListener( 'click', function() {
 
       console.log("タッチしましたyo");
 	    
+      if (i == 0){
       audioElem.src = "pickup.wav";
+      audioElem.muted = true;
       audioElem.play();
+      i = 1;
+      }
 
       }, false );
 
