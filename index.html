@@ -34,8 +34,6 @@
 
       console.log('USING PC');
 
-    ///----------------------------------------------
-
       const ros = new ROSLIB.Ros({url : 'ws://localhost:9090'});
 
       ros.on('connection', function() {console.log('Connected to websocket server.');});
@@ -46,7 +44,7 @@
 	    
        };
 
-    ///----------------------------------------------
+   /////////////////////////////////////////////////////////////////
 
   function MyFunction3(arg) { //webGL側から呼び出される　遠隔PCにメッセージを送る
 
